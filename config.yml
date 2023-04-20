@@ -38,9 +38,9 @@ author: ""
 description: ""
 keywords: []
 link_symbol: ""
-csl: ""
+csl: "./citeproc/iso690-author-date-fr-no-abstract.csl"
 bibliography: ""
-csl_locale: "./locales-fr-fr.xml"
+csl_locale: "./citeproc/locales-fr-fr.xml"
 css_custom: "./styles.css"
 devtools: false
 lang: fr
