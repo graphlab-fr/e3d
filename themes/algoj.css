@@ -1,0 +1,22 @@
+aside.menu {
+    display: none;
+}
+
+.graph-wrapper {
+    position: relative;
+    width: 100vw;
+    background-color: #242424;
+}
+
+.graph-controls {
+    backdrop-filter: none;
+}
+
+.graph-controls div.graph-controls-zoom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.graph-controls button {
+
+}
