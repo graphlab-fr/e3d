@@ -19,6 +19,18 @@ aside.menu {
     flex-direction: column-reverse;
 }
 
-.graph-controls button {
+main.record-container {
+    background-color: #2e2e2e;
+    color: white;
+}
 
+.record footer li .record-links-context {
+    color: black;
+}
+
+button.record-btn-close {
+    background-color: #2e75d9;
+    color: white;
+    border: none;
+    border-radius: 8px;
 }
