@@ -8,18 +8,37 @@ aside.menu {
     background-color: #242424;
 }
 
-.graph-controls {
-    backdrop-filter: none;
-    border-top: aquamarine 1px solid;
-    border-right: aquamarine 1px solid;
-}
-
 .graph-controls div.graph-controls-zoom {
     display: flex;
     flex-direction: column-reverse;
 }
 
-main.record-container {
+.graph-controls-zoom button {
+    border: none;
+    color: white;
+    background-color: #2e75d9;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    transition: all 0.1s ease;
+}
+
+.graph-controls-zoom button:hover {
+    background-color: #4080d7;
+}
+
+.graph-controls-zoom button:nth-child(2) {
+    font-size: 0;
+}
+
+.graph-controls-zoom button:nth-child(2)::before {
+    content: "R";
+    font-size: 11px;
+}
+
+
+main#record-container {
     background-color: #2e2e2e;
     color: white;
 }
@@ -32,5 +51,30 @@ button.record-btn-close {
     background-color: #2e75d9;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: all 0.1s ease;
+}
+
+button.record-btn-close:hover {
+    background-color: #4080d7;
+}
+
+line {
+    stroke: #4080d7;
+}
+
+circle {
+    stroke: #2e75d9;
+    fill: #2e75d9;
+}
+
+.graph-controls {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.graph-controls::before {
+    backdrop-filter: none;
 }
