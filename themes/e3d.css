@@ -73,8 +73,17 @@ circle {
     background-color: #2e2e2e;
     border-radius: 10px;
     padding: 5px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .graph-controls::before {
     backdrop-filter: none;
+}
+
+input#focus-input.active {
+    position: relative;
+    right: 85px;
+    top: 60px;
+    rotate: 90deg;
 }
