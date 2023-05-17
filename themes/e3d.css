@@ -14,10 +14,13 @@ aside.menu {
 }
 
 .graph-controls-zoom button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     border: none;
     color: white;
     background-color: #2e75d9;
-    border-radius: 25px;
+    border-radius: 100%;
     width: fit-content;
     height: fit-content;
     padding: 15px 20px;
@@ -34,7 +37,7 @@ aside.menu {
 
 .graph-controls-zoom button:nth-child(2)::before {
     content: "R";
-    font-size: 11px;
+    font-size: 10px;
 }
 
 
@@ -86,4 +89,5 @@ input#focus-input.active {
     right: 85px;
     top: 60px;
     rotate: 90deg;
+    z-index: 2;
 }
