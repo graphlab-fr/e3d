@@ -42,8 +42,18 @@ aside.menu {
 
 
 main#record-container {
+    position: absolute;
+    width: 45%;
+    height: 65%;
     background-color: #2e2e2e;
+    opacity: 90%;
     color: white;
+    border-radius: 15px;
+    box-shadow: none;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .record footer li .record-links-context {
@@ -73,6 +83,8 @@ circle {
 }
 
 .graph-controls {
+    position: absolute;
+    top: 25px;
     background-color: #2e2e2e;
     border-radius: 10px;
     padding: 5px;
@@ -80,14 +92,21 @@ circle {
     height: fit-content;
 }
 
+.graph-timeline {
+    color: white;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
 .graph-controls::before {
     backdrop-filter: none;
 }
 
-input#focus-input.active {
-    position: relative;
-    right: 85px;
-    top: 60px;
-    rotate: 90deg;
-    z-index: 2;
+.graph-controls-focus {
+    display: none;
 }
