@@ -17,10 +17,9 @@ aside.menu {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border: none;
     color: white;
-    background-color: #2e75d9;
-    border-radius: 100%;
+    border: 2px solid white;
+    background-color: transparent;
     width: fit-content;
     height: fit-content;
     padding: 15px 20px;
@@ -28,7 +27,10 @@ aside.menu {
 }
 
 .graph-controls-zoom button:hover {
-    background-color: #4080d7;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
 }
 
 .graph-controls-zoom button:nth-child(2) {
@@ -45,10 +47,10 @@ main#record-container {
     position: absolute;
     width: 45%;
     height: 65%;
-    background-color: #2e2e2e;
-    opacity: 90%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     color: white;
-    border-radius: 15px;
+    border: solid 2px #33ffbe;
     box-shadow: none;
 
     left: 50%;
@@ -60,43 +62,68 @@ main#record-container {
     color: black;
 }
 
+.record header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 button.record-btn-close {
-    background-color: #2e75d9;
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border-right: 2px solid #33ffbe;
+    border-bottom: 2px solid #33ffbe;
+    border-left: none;
+    border-top: none;
     padding: 5px 10px;
     transition: all 0.1s ease;
 }
 
 button.record-btn-close:hover {
-    background-color: #4080d7;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
 }
 
 line {
-    stroke: #4080d7;
+    stroke: white;
 }
 
 circle {
-    stroke: #2e75d9;
-    fill: #2e75d9;
+    stroke: white;
+    fill: #242424;
 }
 
 .graph-controls {
     position: absolute;
-    top: 25px;
-    background-color: #2e2e2e;
-    border-radius: 10px;
-    padding: 5px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-right: 2px solid #33ffbe;
+    border-bottom: 2px solid #33ffbe;
+    padding: 25px;
     width: fit-content;
     height: fit-content;
 }
 
 .graph-timeline {
     color: white;
-    background-color: #2e2e2e;
-    border-radius: 10px;
-    padding: 5px;
+    border-top: 2px solid #33ffbe;
+    padding: 25px;
+    background-color: #242424;
     width: 100vw;
     left: 0;
     bottom: 0;
