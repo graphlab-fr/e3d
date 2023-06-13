@@ -20,7 +20,7 @@ link_types:
     stroke: simple
     color: "#e1e1e1"
 record_filters: []
-graph_background_color: "#ffffff"
+graph_background_color: ""
 graph_highlight_color: "#ff6a6a"
 graph_highlight_on_hover: true
 graph_text_size: 10
@@ -44,6 +44,6 @@ link_symbol: ""
 csl: ""
 bibliography: ""
 csl_locale: ""
-css_custom: ""
+css_custom: "/Users/tom/Documents/cosma-e3d/themes/e3d.css"
 devtools: false
 lang: en
