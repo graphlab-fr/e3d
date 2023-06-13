@@ -44,11 +44,18 @@ aside.menu {
 
 
 main#record-container {
+    position: absolute;
+    width: 45%;
+    height: 65%;
     background-color: transparent;
     backdrop-filter: blur(10px);
     color: white;
     border: solid 2px #33ffbe;
     box-shadow: none;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .record footer li .record-links-context {
@@ -64,7 +71,7 @@ main#record-container {
 
 button.record-btn-close {
     position: absolute;
-    margin: 0;
+    margin: 0px;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -91,19 +98,16 @@ button.record-btn-close:hover {
 }
 
 line {
-    stroke: grey;
+    stroke: white;
 }
 
 circle {
-    stroke: grey;
+    stroke: white;
     fill: #242424;
 }
 
-text {
-    color: white;
-}
-
-.graph-controls {
+.graph-con
+trols {
     position: absolute;
     top: 0;
     left: 0;
