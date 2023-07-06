@@ -44,18 +44,11 @@ aside.menu {
 
 
 main#record-container {
-    position: absolute;
-    width: 45%;
-    height: 65%;
     background-color: transparent;
     backdrop-filter: blur(10px);
     color: white;
     border: solid 2px #33ffbe;
     box-shadow: none;
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .record footer li .record-links-context {
@@ -106,8 +99,7 @@ circle {
     fill: #242424;
 }
 
-.graph-con
-trols {
+.graph-controls {
     position: absolute;
     top: 0;
     left: 0;
