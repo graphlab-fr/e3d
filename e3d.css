@@ -40,18 +40,11 @@
 
 
 main#record-container {
-    position: absolute;
-    width: 45%;
-    height: 65%;
     background-color: transparent;
     backdrop-filter: blur(10px);
     color: white;
     border: solid 2px #33ffbe;
     box-shadow: none;
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .record footer li .record-links-context {
@@ -102,8 +95,7 @@ circle {
     fill: #242424;
 }
 
-.graph-con
-trols {
+.graph-controls {
     position: absolute;
     top: 0;
     left: 0;
@@ -134,3 +126,33 @@ trols {
 .graph-controls-focus {
     display: none;
 }
+
+article.record header {
+	display: grid;
+	gap: 0 1em;
+	grid-template:
+	"img title" auto
+	"img id" auto
+	"img type" auto
+	"img tags" auto
+	"img prenom" auto
+	"img nom" auto
+	"img orcid" auto
+	"img hal" auto
+	"img gscholar" auto
+	"img wikipedia" auto
+	"img twitter" auto / 1fr 2fr;
+}
+
+h1.record-title { grid-area: title }
+img.record-img { grid-area: img }
+div.record-id { grid-area: id }
+div.record-type { grid-area: type }
+div.record-tags { grid-area: tags }
+div.record-prenom { grid-area: prenom }
+div.record-nom { grid-area: nom }
+div.record-orcid { grid-area: orcid }
+div.record-hal { grid-area: hal }
+div.record-gscholar { grid-area: gscholar }
+div.record-wikipedia { grid-area: wikipedia }
+div.record-twitter { grid-area: twitter }
