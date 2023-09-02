@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500;1,700&family=Space+Mono:wght@400;700&display=swap');
+
+.record-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 36px;
+    color: #white;
+}
+.graph-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: calc(100vw - 30rem);
+    background-color: #242424;
+}
+button, .btn {
+    background-color: #0d2621;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+
+h1.title {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: white;
+    text-align: center;
+}
+
+aside.menu{
+  background-color: #242424;
+  color: rgb(13 228 190);
+}
+aside.menu header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:0d2621;
+    }
+
+aside.menu header:before {
+    display: inline-block;
+    height: 70px;
+    width: 100px;
+    background-size: 100px 70px;
+    background-repeat: no-repeat;
+}
+
+main#record-container {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: solid 2px #33ffbe;
+    box-shadow: none;
+}
+
+.record footer li .record-links-context {
+    color: black;
+}
+
+.record header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button.record-btn-close {
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    border-right: 2px solid #33ffbe;
+    border-bottom: 2px solid #33ffbe;
+    border-left: none;
+    border-top: none;
+    padding: 5px 10px;
+    transition: all 0.1s ease;
+}
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+}
+
+line {
+    stroke: white;
+}
+
+circle {
+    stroke: white;
+    fill: #242424;
+}
+
+.graph-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-right: 2px solid #33ffbe;
+    border-bottom: 2px solid #33ffbe;
+    padding: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.graph-timeline {
+    color: white;
+    border-top: 2px solid #33ffbe;
+    padding: 25px;
+    background-color: #242424;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
+.graph-controls::before {
+    backdrop-filter: none;
+}
+
+.graph-controls-focus {
+    display: none;
+}
+
+article.record header {
+    display: grid;
+    gap: 0 1em;
+    grid-template:
+    "img title" auto
+    "img id" auto
+    "img type" auto
+    "img tags" auto
+    "img prenom" auto
+    "img nom" auto
+    "img orcid" auto
+    "img hal" auto
+    "img gscholar" auto
+    "img wikipedia" auto
+    "img twitter" auto / 1fr 2fr;
+}
+
+h1.record-title { grid-area: title }
+img.record-img { grid-area: img }
+div.record-id { grid-area: id }
+div.record-type { grid-area: type }
+div.record-tags { grid-area: tags }
+div.record-prenom { grid-area: prenom }
+div.record-nom { grid-area: nom }
+div.record-orcid { grid-area: orcid }
+div.record-hal { grid-area: hal }
+div.record-gscholar { grid-area: gscholar }
+div.record-wikipedia { grid-area: wikipedia }
+div.record-twitter { grid-area: twitter }

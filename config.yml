@@ -12,9 +12,48 @@ record_types:
   undefined:
     fill: "#858585"
     stroke: "#858585"
+  Professeur des universités:
+    fill: "#FF0000"
+    stroke: "#FF0000"
+  Maître·de conférences - HDR:
+    fill: "#FF1493"
+    stroke: "#FF1493"
+  Maître de conférences:
+    fill: "#FF8C00"
+    stroke: "#FF8C00"
+  Ingénieur de recherches:
+    fill: "#FFA07A"
+    stroke: "#FFA07A"
+  Ingénieur d'études:
+    fill: "#FFD700"
+    stroke: "#FFD700"
+  Émérite:
+    fill: "#FF6347"
+    stroke: "#FF6347"
+  Docteur:
+    fill: "#FF69B4"
+    stroke: "#FF69B4"
+  Doctorant:
+    fill: "#9400D3"
+    stroke: "#9400D3"
+  Masterant:
+    fill: "#FF4500"
+    stroke: "#FF4500"
+  Membre Associé:
+    fill: "#00008B"
+    stroke: "#00008B"
+  Stagiaire:
+    fill: "#40E0D0"
+    stroke: "#40E0D0"
   Projets:
-    fill: "#AA0000"
-    stroke: "#aa0000"
+    fill: "#20B2AA"
+    stroke: "#20B2AA"
+  Publications:
+    fill: "#00CED1"
+    stroke: "#00CED1"
+  Chercheur invité:
+    fill: "#1E90FF"
+    stroke: "#1E90FF"
 link_types:
   undefined:
     stroke: simple
@@ -43,14 +82,15 @@ record_metas:
   - gscholar
   - wikipedia
   - twitter
-title: ""
-author: ""
+title: Graphe de l'axe E3D du MICA
+author: E3D
 description: ""
 keywords: []
 link_symbol: ""
 csl: ""
 bibliography: ""
 csl_locale: ""
-css_custom: ./e3d.css
+css_custom: ./viz.css
 devtools: false
-lang: en
+lang: fr
+
