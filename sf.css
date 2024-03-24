@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500;1,700&family=Space+Mono:wght@400;700&display=swap');
+
+/* Styles de base */
+body, html, .graph-wrapper, aside.menu, .graph-timeline, button.record-btn-close, button, .btn, h1.title, aside.menu header, .record footer li .record-links-context, .record header, .graph-controls {
+    font-family: 'Space Mono', monospace;
+    background-color: rgba(36, 36, 36, 0.8); /* Fond uniforme pour tous les éléments */
+    color: white; /* Texte blanc pour tout */
+}
+
+/* Configuration du wrapper du graphique */
+.graph-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: calc(100vw - 30rem);
+}
+
+/* Styles pour les boutons */
+button, .btn {
+    background-color: #0d2621;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    transition: all 0.1s ease;
+}
+button:hover {
+    animation-name: clignoter;
+    transition: none;
+}
+
+/* Configuration de main#record-container pour le centrage et la transparence */
+main#record-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: solid 2px #33ffbe;
+    box-shadow: none;
+    padding: 20px;
+    width: auto;
+    max-width: calc(100vw - 40rem); /* Ajusté pour ne pas dépasser le graph-wrapper */
+    box-sizing: border-box;
+}
+
+/* Animation de clignotement pour les boutons */
+@keyframes clignoter {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Styles pour les contrôles du graphique */
+.graph-controls {
+    position: fixed;
+    bottom: 0;
+    right: calc(100vw - 30rem);
+}
+
+/* Styles pour la timeline du graphique */
+.graph-timeline {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* Styles pour l'entête de l'enregistrement utilisant CSS Grid */
+article.record header {
+    display: grid;
+    gap: 0 1em;
+    grid-template-areas:
+        "img title"
+        "img id"
+        "img type"
+        "img tags"
+        "img prenom"
+        "img nom"
+        "img orcid"
+        "img hal"
+        "img gscholar"
+        "img wikipedia"
+        "img twitter";
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Affectation des zones de la grille */
+h1.record-title { grid-area: title; }
+img.record-img { grid-area: img; }
+div.record-id { grid-area: id; }
+div.record-type { grid-area: type; }
+div.record-tags { grid-area: tags; }
+div.record-prenom { grid-area: prenom; }
+div.record-nom { grid-area: nom; }
+div.record-orcid { grid-area: orcid; }
+div.record-hal { grid-area: hal; }
+div.record-gscholar { grid-area: gscholar; }
+div.record-wikipedia { grid-area: wikipedia; }
+div.record-twitter { grid-area: twitter; }
+
+article.record div, 
+article.record h1, 
+article.record a {
+  color: #00FF00; /* Vert d'écran d'ordinateur classique */
+}

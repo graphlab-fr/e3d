@@ -12,10 +12,22 @@ record_types:
   undefined:
     fill: "#858585"
     stroke: "#858585"
+  SIC:
+    fill: "#8A2BE2"
+    stroke: "#8A2BE2"
+  sociologie:
+    fill: "#4682B4"
+    stroke: "#4682B4"
+  sciences de l'éducation:
+    fill: "#6B8E23"
+    stroke: "#6B8E23"
+  humanités digitales:
+    fill: "#DAA520"
+    stroke: "#DAA520"
   Professeur des universités:
     fill: "#FF0000"
     stroke: "#FF0000"
-  Maître·de conférences - HDR:
+  Maître de conférences - HDR:
     fill: "#FF1493"
     stroke: "#FF1493"
   Maître de conférences:
@@ -58,6 +70,9 @@ link_types:
   undefined:
     stroke: simple
     color: "#e1e1e1"
+  d:
+    stroke: simple
+    color: "#50C878"
 record_filters: []
 graph_background_color: ""
 graph_highlight_color: "#ff6a6a"
@@ -82,6 +97,7 @@ record_metas:
   - gscholar
   - wikipedia
   - twitter
+  - site
 title: Graphe de l'axe E3D du MICA
 author: E3D
 description: ""
@@ -90,7 +106,6 @@ link_symbol: ""
 csl: ""
 bibliography: ""
 csl_locale: ""
-css_custom: ./viz.css
+css_custom: ./sf.css
 devtools: false
 lang: fr
-
